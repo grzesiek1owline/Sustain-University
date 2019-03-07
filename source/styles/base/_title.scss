@@ -1,0 +1,21 @@
+h1 {
+    font-size: calc-em(80);
+    line-height: 1.33;
+}
+
+h2 {
+    font-size: calc-em(30);
+    line-height: 1.33;
+}
+
+h3{
+    font-size: calc-em(21);
+    line-height: 1.75;
+}
+
+
+.subtitle {
+    font-size: 21px;
+    line-height: 1.9;
+    color: $dark;
+  }

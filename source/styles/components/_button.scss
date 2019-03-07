@@ -1,3 +1,108 @@
-.button {
+.btn{
+    font-size: calc-em(12);
+    font-weight: bold;
+    padding:20px 50px;
+    transition: all .3s ease;
+    display: inline-block;
+    border-radius: 4px;
+    
+    //niebieski
+    &--primary{
+        color: $white;
+        box-shadow: 0 10px 30px 0 rgba(80, 98, 255, 0.46);
+        background-image: linear-gradient(to left, $primary, $primary--light);
+
+        &:hover{
+            background-image: linear-gradient(to left, $primary, $primary);
+            box-shadow: 0 10px 30px 0 rgba(80, 98, 255, 0.26);
+        }
+    }
+    //bez tła, bez bordera
+    &--transparent{
+        color: $cloudy-blue;
+    }
+    //zielony
+    &--second{
+        color: $white;
+        box-shadow: 0 10px 30px 0 rgba(40, 182, 122, 0.49);
+        background-image: linear-gradient(to left, $second, $second--light);
+
+        &:hover{
+            box-shadow: 0 10px 30px 0 rgba(40, 182, 122, 0.29);
+            background-image: linear-gradient(to left, $second, $second);
+        }
+    }
+    //biały
+    &--white{
+            color: $primary;
+            box-shadow: 0 6px 22px 0 rgba(223, 228, 240, 0.6);
+            border: solid 2px $pale-grey-three;
+            background-color: $white;
+            padding:18px 48px;
+
+            &:hover{
+                box-shadow: 0 6px 22px 0 rgba(223, 228, 240, 0.2);
+                background-color: rgba(223, 228, 240, 0.2);
+            }
+    }
+} 
+
+// burger
+
+.hamburger{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border:none;
+    background: none;
+    font-size: calc-em(14);
+    font-weight: bold;
+    color: $dark;
+    cursor: pointer;
+
+    &__line{
+            width: 26px;
+            height: 2px;
+            border-radius: 4.5px;
+            background-color: $primary;
+            position: relative;
+            margin-right: 8px;
+            display: block;
+
+            &::before{
+                content:"";
+                position: absolute;
+                top: -8px;
+                right: 0%;
+                width: 100%;
+                height: 2px;
+                border-radius: 4.5px;
+                background-color: $primary;
+                transition: all .2s ease;
+            }
+
+            &::after{
+                content:"";
+                position: absolute;
+                bottom: -8px;
+                left: 0%;
+                width: 50%;
+                height: 2px;
+                border-radius: 4.5px;
+                background-color: $primary;
+                transition: all .2s ease;
+            }
+    }
+
+    &:hover .hamburger__line {
+        &::before{
+            width: 50%;
+        }
+        &::after{
+            width: 100%;
+        }
+    }
 
 }

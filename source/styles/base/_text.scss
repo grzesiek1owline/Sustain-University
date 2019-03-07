@@ -1,1 +1,30 @@
 
+.paragraph {
+    font-size: calc-em(12);  
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.dark {
+    color: $dark
+}
+
+.paragraph--short{
+    color: $cloudy-blue-two;
+    line-height: 1.75;
+}
+
+.paragraph--long{
+    color: $bluey-grey;
+    line-height: 2.25;
+}
+
+.color-primary{
+    color:$primary!important;
+}

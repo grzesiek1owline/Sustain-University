@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="assets/styles/bundle.css">
   </head>
   <body>
+    {% include 'header.twig' %}
     {% block content %}{% endblock %}
+    {% include 'footer.twig' %}
     <script src="assets/scripts/bundle.js"></script>
   </body>
 </html>
