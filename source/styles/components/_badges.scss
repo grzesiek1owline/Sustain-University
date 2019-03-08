@@ -6,6 +6,11 @@
     color: $white;
     font-size: calc-em(14);
     font-weight: bold;
+    transition: all .3s ease;
+
+    & > img {
+        margin-bottom: 20px;
+    }
 
     &--small{
         width: 64px;
@@ -14,6 +19,7 @@
 
         & > img {
             width: 50%;
+            margin-bottom: 0;
         }
     }
 
@@ -36,6 +42,13 @@
         box-shadow: 0 6px 22px 0 rgba(223, 228, 240, 0.6);
         border: solid 2px $pale-grey-three;
         background-color: $white;
+        color: $cloudy-blue;
     }
 
+
+
 }
+
+    a:hover .badge{
+        box-shadow: none;
+    }

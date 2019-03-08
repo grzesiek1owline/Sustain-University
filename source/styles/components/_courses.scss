@@ -1,0 +1,23 @@
+
+//==================== ARCHIVE ==================//
+.archive {
+    &__filters {
+        &>li {
+            &>a {}
+        }
+    } //ul.archive__filters
+    &__list {}
+}
+
+.course {
+    &__single {
+        &--archive {}
+    }
+    &__header {}
+    &__thumb{
+        &--archive{}
+    }
+    &__time {}
+    &__desc {}
+    &__title {}
+}

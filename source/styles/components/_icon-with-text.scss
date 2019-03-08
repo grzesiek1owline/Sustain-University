@@ -1,7 +1,11 @@
-.icon{
+.text-with-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 240px;
 
-    &__text{
-
+    & img {
+        margin-right: 20px;
     }
-
 }

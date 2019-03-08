@@ -1,6 +1,11 @@
 @import "header";
 @import "footer";
 
+.no-gutter-x {
+    padding-right:0px!important;
+    padding-left:0px!important;
+}
+
 @media all and (min-width:1400px){
     .container{
         width: 100%;
@@ -11,13 +16,38 @@
 .section{
 
     &--hero{
-        padding: 60px 0px 60px;
+        padding: 75px 0px 50px;
+        background-image: url(../images/group-3947.png);
+        background-position: left 500px bottom;
+        background-repeat: no-repeat;
     }
 
     &--icons-with-text{
         padding: 70px 0px 85px;
+    }
+
+    &--bt {
         border-top: 1px solid $pale-grey-three;
+    }
+
+    &--bb {
+        
         border-bottom: 1px solid $pale-grey-three;
     }
 
 }
+
+
+/*========== HERO ===========*/
+
+.hero__paths{
+    width: 100%;
+    max-width: 400px;
+    padding:0px 15px;
+}
+
+.category__element{
+    margin-bottom: 30px;
+}
+
+/*========== END HERO ===========*/

@@ -11,9 +11,7 @@
     font-weight: lighter;
 }
 
-.dark {
-    color: $dark
-}
+
 
 .paragraph--short{
     color: $cloudy-blue-two;
@@ -27,4 +25,8 @@
 
 .color-primary{
     color:$primary!important;
+}
+
+.dark {
+    color: $dark!important;
 }

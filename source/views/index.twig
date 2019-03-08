@@ -6,14 +6,14 @@
 
   <div class="container">
     <div class="row">
-      <div class="col12 col-md-12 col-lg-7">
-        <div class="page__title">
+      <div class="col-12 col-md-12 col-lg-7">
+        <div class="page__title pt-4">
           <h1>Sustain <span class="color-primary">University</span></h1>
-          <p class="subtitle dark">
+          <p class="subtitle dark col-12 col-lg-8 mt-3 no-gutter-x">
               Always free video courses to help ecology
               and save a lot of money.
           </p>
-          <ul class="d-flex flex-column flex-lg-row">
+          <ul class="d-flex flex-column flex-lg-row mt-4 mb-5">
             <li class="hero-button__element mr-4">
               <a class="btn btn--second" href="">Just register the account</a>
             </li>
@@ -21,6 +21,58 @@
                 <a class="btn btn--white color-primary" href="">Donate our Univeristy</a>
               </li>
           </ul>
+          <img class="mt-2" src="assets/images/logo.svg" alt="logo">
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5">
+        <div class="ml-auto hero__paths">
+            <div class="d-flex flex-column text-center">
+                <p class="paragraph paragraph--short bold dark mb-4">Choose your educational path</p>
+                <ul class="d-flex flex-row flex-wrap justify-content-between">
+                  <li class="category__element">
+                    <a href="">
+                      <div class="badge badge--primary-color d-flex flex-column align-items-center justify-content-center">
+                        <img src="assets/images/save-water.svg" alt="">
+                        <p>Water Path</p>
+                      </div>
+                      <!-- /.badge -->
+                    </a>
+                  </li>
+      
+                  <li class="category__element">
+                    <a href="">
+                      <div class="badge badge--secondary-color d-flex flex-column align-items-center justify-content-center">
+                        <img src="assets/images/sprout.svg" alt="">
+                        <p>Ground Path</p>
+                      </div>
+                      <!-- /.badge -->
+                    </a>
+                  </li>
+      
+                  <li class="category__element">
+                    <a href="">
+                      <div class="badge badge--third-color d-flex flex-column align-items-center justify-content-center">
+                        <img src="assets/images/sun.svg" alt="">
+                        <p>Sun Energy Path</p>
+                      </div>
+                      <!-- /.badge -->
+                    </a>
+                  </li>
+      
+                  <li class="category__element">
+                    <a href="">
+                      <div class="badge badge--white d-flex flex-column align-items-center justify-content-center">
+                        <img src="assets/images/recycle.svg" alt="">
+                        <p>All Other Paths</p>
+                      </div>
+                      <!-- /.badge -->
+                    </a>
+                  </li>
+                </ul>
+                <p class="paragraph paragraph--short bold mt-2 w-75 mx-auto">We are uploading new videos and lessons
+                  all the time. Try to use search if you don’t
+                  see your path.</p>
+              </div>
         </div>
       </div>
     </div>
@@ -33,24 +85,24 @@
     <div class="container">
       <ul class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row">
         <li class="pr-2">
-            <figure class="d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
-                <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+            <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+                <img src="assets/images/ecologist.png" alt="">
                 <figcaption class="paragraph paragraph--short bold">Sustain University is
                     for educational purpose.
                     <b class="dark">Always Free!</b></figcaption>
             </figure>
         </li>
         <li class="pr-2">
-          <figure class="d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
-                <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+          <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+                <img src="assets/images/prize.png" alt="">
                 <figcaption class="paragraph paragraph--short bold"><b class="dark">Educate and save money</b>
                     with new technologies
                     based on ecology</figcaption>
             </figure>
         </li>
         <li class="pr-2">
-          <figure class="d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
-                <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+          <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+                <img src="assets/images/planet-earth.png" alt="">
                 <figcaption class="paragraph paragraph--short bold"><b class="dark">Thousands users</b> from
                     all over the world
                     watched our videos</figcaption>
@@ -58,6 +110,13 @@
         </li>
       </ul>
     </div>
+  </section>
+
+  <section class="section section--courses-list">
+      <div class="container">
+        <h2 class="section-title text-center">Most popular courses</h2>
+        {% include 'courses-list.twig' %}
+      </div>
   </section>
 
 {% endblock %}

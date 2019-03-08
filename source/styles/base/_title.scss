@@ -1,11 +1,17 @@
 h1 {
     font-size: calc-em(80);
     line-height: 1.33;
+    color: $second--light;
 }
 
 h2 {
     font-size: calc-em(30);
     line-height: 1.33;
+
+    &.section-title{
+        font-weight: bold;
+        color:$dark;
+    }
 }
 
 h3{
