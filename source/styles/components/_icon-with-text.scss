@@ -7,5 +7,19 @@
 
     & img {
         margin-right: 20px;
+        @include rwd(992px){
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    @include rwd(992px){
+        padding:0px 20px;
+        text-align: center;
+    }
+
+    @include rwd(768px){
+        margin: 0px auto 40px;
+        max-width: 320px;
     }
 }

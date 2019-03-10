@@ -9,21 +9,41 @@
 @media all and (min-width:1400px){
     .container{
         width: 100%;
-        max-width: 1370px;
+        max-width: 1380px;
     }
 }
 
 .section{
 
     &--hero{
-        padding: 75px 0px 50px;
+        padding: 65px 0px 70px;
         background-image: url(../images/group-3947.png);
         background-position: left 500px bottom;
         background-repeat: no-repeat;
+
+        @include rwd(1400px){
+            background-position: center bottom;
+        }
+
+        @include rwd(1200px){
+            padding-bottom: 200px;
+        }
+
+        @include rwd(992px){
+            padding-bottom: 320px;
+        }
     }
 
     &--icons-with-text{
         padding: 70px 0px 85px;
+    }
+
+    &--courses-list{
+        padding: 80px 0px 95px;
+    }
+
+    &--why-us{
+        padding: 125px 0px 40px;
     }
 
     &--bt {
@@ -35,6 +55,11 @@
         border-bottom: 1px solid $pale-grey-three;
     }
 
+    &--opinions{
+        position: relative;
+        min-height: 650px;
+    }
+
 }
 
 
@@ -44,6 +69,11 @@
     width: 100%;
     max-width: 400px;
     padding:0px 15px;
+
+    @include rwd(992px){
+        padding-top: 80px;
+        max-width: 400px;
+    }
 }
 
 .category__element{
@@ -51,3 +81,124 @@
 }
 
 /*========== END HERO ===========*/
+
+
+/*========== WHY US ===========*/
+.why-us__list{
+    margin-top: 130px;
+}
+
+.why-us__element{
+    margin-bottom: 120px;
+}
+
+.why-us__desc{
+    width: 380px;
+    @include rwd(992px){
+        width: 80%;
+        margin: 40px auto 0px;
+    }
+}
+
+/*========== END WHY US ===========*/
+
+/*========== OPINIONS ===========*/
+
+.opinions__bg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @include rwd(992px){
+        display: none;
+    }
+}
+
+.opinions{
+
+    padding: 95px 0px 115px 110px;
+    @include rwd(1300px){
+        padding: 95px 0px 115px 30px;
+    }
+
+    @include rwd(992px){
+        padding: 95px 15px 115px;
+    }
+
+
+    &__dots{
+        margin-bottom: 40px;
+    }
+
+    &__slider{
+            width: 470px;
+            min-height: 200px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 6px 22px 0 rgba(223, 228, 240, 0.6);
+            border: solid 2px $pale-grey-three;
+            background-color: $white;
+            padding-bottom: 38px;
+
+            @include rwd(992px){
+                width: 100%;
+            }
+    }
+
+    &__slide{
+
+        padding:20px 50px 40px;
+
+        &::before{
+            content: '„';
+            font-weight: bold;
+            font-size: calc-em(72);
+            line-height: 0.3;
+            color: $dark;
+        }
+
+    }
+
+    
+
+}
+
+.author {
+
+    &__name {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: $dark;
+    }
+
+    &__job {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.75;
+            color: $cloudy-blue-two;
+    }
+
+    &__photo{
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius:50%;
+    }
+
+}
+
+.opinions__desc {
+    font-size: 21px;
+    line-height: 1.9;
+    color: $dark;
+    width: 100%;
+    max-width:330px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+
+    @include rwd(992px){
+        max-width: 100%;
+    }
+  }
+
+/*========== END OPINIONS===========*/

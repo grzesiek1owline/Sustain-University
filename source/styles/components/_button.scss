@@ -45,6 +45,18 @@
                 background-color: rgba(223, 228, 240, 0.2);
             }
     }
+
+    &--ico{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > img {
+            margin-right: 12px;
+            width: 16px;
+        }
+    }
 } 
 
 // burger
@@ -60,6 +72,7 @@
     font-size: calc-em(14);
     font-weight: bold;
     color: $dark;
+    font-family: $font-base;
     cursor: pointer;
 
     &__line{
@@ -68,7 +81,7 @@
             border-radius: 4.5px;
             background-color: $primary;
             position: relative;
-            margin-right: 8px;
+            margin-right: 16px;
             display: block;
 
             &::before{
@@ -105,4 +118,113 @@
         }
     }
 
+}
+
+
+.url {
+
+    font-size: 12px;
+    font-weight: bold;
+    color: $primary;
+    transition: all .2s ease;
+
+    &--icon{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > img {
+            margin-right: 6px;
+        }
+
+    }
+
+    &:hover{
+        opacity: .8;
+    }
+
+}
+
+
+.dot{
+
+    height: 9px;
+    width: 20px;
+    border:none;
+    border-radius: 2px;
+    background-color: $pale-grey-three;
+    cursor: pointer;
+    transition: all .2s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+
+    &:not(.active)::before{
+        content:'';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        background-image: linear-gradient(to left, $primary, $primary);
+        transition: all .2s ease;
+
+    }
+
+    &:not(.active):hover::before{
+        left: 0%;
+    }
+
+    &.active {
+        width: 41px;
+        background-image: linear-gradient(to left, $second, $second--light);
+        box-shadow: 0 10px 30px 0 rgba(40, 182, 122, 0.49);
+
+    }
+
+}
+
+.opinions__dots{
+    display: flex;
+}
+
+.opinions__dots li{
+    margin-right: 10px;
+}
+
+.opinions__dots li button{
+    height: 9px;
+    width: 20px;
+    border:none;
+    border-radius: 2px;
+    background-color: $pale-grey-three;
+    cursor: pointer;
+    transition: all .2s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    text-indent: -9999px;
+}
+
+.opinions__dots li:not(.slick-active) button::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    background-image: linear-gradient(to left, $primary, $primary);
+    transition: all .2s ease;
+}
+
+.opinions__dots li:not(.slick-active) button:hover::before{
+    left: 0%; 
+}
+
+.opinions__dots li.slick-active button{
+    width: 41px;
+        background-image: linear-gradient(to left, $second, $second--light);
+        box-shadow: 0 10px 30px 0 rgba(40, 182, 122, 0.49);
 }

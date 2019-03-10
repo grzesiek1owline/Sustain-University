@@ -10,4 +10,15 @@
 
 body {
     position: relative;
+    background-color: #fff;
+}
+
+
+.o-cover{
+
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
 }

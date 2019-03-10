@@ -2,6 +2,9 @@ h1 {
     font-size: calc-em(80);
     line-height: 1.33;
     color: $second--light;
+    @include rwd(768px){
+        font-size: calc-em(60);
+    }
 }
 
 h2 {

@@ -2,8 +2,30 @@
     background-image: linear-gradient(to left, $second, $second--light);
     color:$white;
     padding:60px 0px 90px;
+    position: relative;
+
+
+    &__bg{  
+
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 650px;
+        height: auto;
+        max-height: 100%;
+
+        @include rwd(1200px){
+            display: none;
+        }
+
+    }
+
 }
 
 .contributors p {
     opacity:.6;
+    font-size: calc-em(12);
+    font-weight: bold;
+    line-height: 1.75;
+    color: $white;
 }

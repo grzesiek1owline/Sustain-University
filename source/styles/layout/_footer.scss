@@ -17,7 +17,16 @@ footer{
     }
 
     &__block {
-        padding-right: 140px;
+        padding-right: 180px;
+        @include rwd(1400px){
+            padding-right: 90px;
+        }
+
+        @include rwd(992px){
+            padding-bottom: 30px;
+            padding-right: 0;
+            text-align: center;
+        }
     }
 
     &__footer-list {
@@ -45,8 +54,10 @@ footer{
 
     &__footer {
 
+        margin-left: 0px;
+
         & ul li {
-            margin:0px 5px;
+            margin:0px 20px;
         }
 
     }

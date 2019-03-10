@@ -2,33 +2,33 @@
 
 {% block content %}
 
-<section class="section section--hero">
+<section class="section section--hero section--bb">
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-12 col-lg-7">
-        <div class="page__title pt-4">
+      <div class="col-12 col-md-12 col-lg-6">
+        <div class="page__title pt-5 text-center text-lg-left">
           <h1>Sustain <span class="color-primary">University</span></h1>
-          <p class="subtitle dark col-12 col-lg-8 mt-3 no-gutter-x">
+          <p class="subtitle dark col-12 col-lg-8 mt-2 mb-4 pb-2 pt-2 no-gutter-x">
               Always free video courses to help ecology
               and save a lot of money.
           </p>
-          <ul class="d-flex flex-column flex-lg-row mt-4 mb-5">
-            <li class="hero-button__element mr-4">
+          <ul class="d-flex flex-column justify-content-center justify-content-lg-start flex-sm-row flex-lg-row mb-5">
+            <li class="hero-button__element mb-3 mb-md-0 mr-0 mx-2 mr-lg-4">
               <a class="btn btn--second" href="">Just register the account</a>
             </li>
-            <li class="hero-button__element mr-4">
+            <li class="hero-button__element mb-3 mb-md-0 mr-0 mx-2 mr-lg-4">
                 <a class="btn btn--white color-primary" href="">Donate our Univeristy</a>
               </li>
           </ul>
           <img class="mt-2" src="assets/images/logo.svg" alt="logo">
         </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-5">
-        <div class="ml-auto hero__paths">
+      <div class="col-12 col-md-12 col-lg-6">
+        <div class="mx-auto ml-lg-auto hero__paths">
             <div class="d-flex flex-column text-center">
-                <p class="paragraph paragraph--short bold dark mb-4">Choose your educational path</p>
-                <ul class="d-flex flex-row flex-wrap justify-content-between">
+                <p class="paragraph paragraph--short bold dark pb-2 mb-4">Choose your educational path</p>
+                <ul class="d-flex flex-row flex-wrap justify-content-center justify-content-sm-between">
                   <li class="category__element">
                     <a href="">
                       <div class="badge badge--primary-color d-flex flex-column align-items-center justify-content-center">
@@ -83,9 +83,9 @@
 
   <section class="section section--icons-with-text">
     <div class="container">
-      <ul class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row">
+      <ul class="d-flex justify-content-center justify-content-lg-between flex-column flex-md-row">
         <li class="pr-2">
-            <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+            <figure class="text-with-icon d-flex align-items-center justify-content-center justify-content-lg-start flex-column flex-lg-row">
                 <img src="assets/images/ecologist.png" alt="">
                 <figcaption class="paragraph paragraph--short bold">Sustain University is
                     for educational purpose.
@@ -93,7 +93,7 @@
             </figure>
         </li>
         <li class="pr-2">
-          <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+          <figure class="text-with-icon d-flex align-items-center justify-content-center justify-content-lg-start flex-column flex-lg-row">
                 <img src="assets/images/prize.png" alt="">
                 <figcaption class="paragraph paragraph--short bold"><b class="dark">Educate and save money</b>
                     with new technologies
@@ -101,7 +101,7 @@
             </figure>
         </li>
         <li class="pr-2">
-          <figure class="text-with-icon d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row">
+          <figure class="text-with-icon d-flex align-items-center justify-content-center justify-content-lg-start flex-column flex-lg-row">
                 <img src="assets/images/planet-earth.png" alt="">
                 <figcaption class="paragraph paragraph--short bold"><b class="dark">Thousands users</b> from
                     all over the world
@@ -112,11 +112,27 @@
     </div>
   </section>
 
-  <section class="section section--courses-list">
-      <div class="container">
+  <section class="section section--courses-list section--bt section--bb">
         <h2 class="section-title text-center">Most popular courses</h2>
-        {% include 'courses-list.twig' %}
-      </div>
+        {% include 'base/courses-list.twig' %}
   </section>
+
+  <section class="section section--why-us section--bb">
+      <div class="container">
+        <h2 class="section-title text-center">Why Sustain University?</h2>
+        {% include 'base/why-us.twig' %}
+    </div>
+  </section>
+
+  <section class="section section--opinions">
+      <div class=" opinions__bg col-5 no-gutter-x">
+        <img class="o-cover" src="assets/images/opinie2.png" alt="opinions">
+      </div>
+      <div class="container">
+          {% include 'base/opinions.twig' %}
+      </div>
+    </section>
+
+
 
 {% endblock %}

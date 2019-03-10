@@ -1,6 +1,7 @@
 header{
     border-bottom: 1px solid $pale-grey-three;
     padding: 15px 0px 55px;
+    font-family: $font-base;
 }
 
 .nav__top{
@@ -23,8 +24,33 @@ header{
 }
 .search {
     display: block;
-    max-width: 527px;
+    max-width: 520px;
     width: 100%;
+    margin-left: 240px;
+
+    @include rwd(1400px){
+        margin-left: 120px;
+    }
+
+    @include rwd(1200px){   
+        max-width: 300px;
+    }
+    @include rwd(992px){
+        order:3;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    @include rwd(576px){
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    
+
+
     &__form {
         display: block;
         position: relative;
@@ -39,17 +65,32 @@ header{
         font-size: calc-em(12);
         font-weight: bold;
         height: 55px;
-        padding-left: 25px;
+        padding-left: 55px;
+        padding-right: 20px;
         width: 100%;
         color: $dark;
         @include placeholder {
             color: $cloudy-blue;
         }
+
+        @include rwd(576px){
+            padding-left: 35px;
+        }
     }
     &__submit {
         position: absolute;
-        top: 15px;
-        left: 5px;
+        top: 18px;
+        left: 25px;
+        background-image: url(../images/003-search.png);
+        width: 16px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-color: transparent;
+        border:none;
+        @include rwd(576px){
+            left: 15px;
+        }
     }
 }
 
