@@ -18,15 +18,18 @@
     &--hero{
         padding: 65px 0px 70px;
         background-image: url(../images/group-3947.png);
-        background-position: left 500px bottom;
+       // background-position: right 53% bottom;
+        background-position: center bottom;
+        background-size: 700px auto;
         background-repeat: no-repeat;
 
         @include rwd(1400px){
-            background-position: center bottom;
+            background-size: 500px auto;
         }
 
         @include rwd(1200px){
             padding-bottom: 200px;
+            background-size: 700px auto;
         }
 
         @include rwd(992px){
@@ -67,12 +70,12 @@
 
 .hero__paths{
     width: 100%;
-    max-width: 400px;
+    max-width: 370px;
     padding:0px 15px;
 
     @include rwd(992px){
         padding-top: 80px;
-        max-width: 400px;
+        max-width: 370px;
     }
 }
 

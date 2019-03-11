@@ -14,11 +14,20 @@ header{
         font-size: 11px;
         color: $cloudy-blue;
         text-transform: capitalize;
+
+        &:hover { 
+            color: $dark;
+        }
+
     }
 
     & > ul li.donate a {
         font-weight: bold;
         color:$primary;
+
+        &:hover {
+            opacity: .8;
+        }
     }
 
 }

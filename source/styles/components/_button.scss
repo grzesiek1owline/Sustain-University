@@ -20,6 +20,10 @@
     //bez tła, bez bordera
     &--transparent{
         color: $cloudy-blue;
+
+        &:hover {
+           color : $dark;
+        }
     }
     //zielony
     &--second{
