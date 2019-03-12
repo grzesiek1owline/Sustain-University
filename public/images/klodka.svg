@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>ikona</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="menu" transform="translate(-1246.000000, -51.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="register" transform="translate(1200.000000, 32.000000)">
+                <g id="ikona" transform="translate(47.000000, 20.000000)">
+                    <g id="Group-75">
+                        <g id="Group-77">
+                            <path d="M11,14.9387223 L1,14.9387223 C0.448,14.9387223 0,14.4910143 0,13.9393742 L0,7.94328553 C0,7.39164537 0.448,6.94393742 1,6.94393742 L11,6.94393742 C11.552,6.94393742 12,7.39164537 12,7.94328553 L12,13.9393742 C12,14.4910143 11.552,14.9387223 11,14.9387223 Z" id="Stroke-93"></path>
+                            <path d="M3,6.94393742 L3,3.94589309 C3,2.28997327 4.343,0.947848761 6,0.947848761 C7.657,0.947848761 9,2.28997327 9,3.94589309 L9,6.94393742" id="Stroke-94"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="660px" viewBox="0 0 1600 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>B4FBA842-EF20-45E5-A532-10263296392D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1601" height="660"></rect>
+    </defs>
+    <g id="Web-App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main_3" transform="translate(0.000000, -3247.000000)">
+            <g id="references" transform="translate(0.000000, 3247.000000)">
+                <g id="Oval-+-Oval-+-Oval-Mask">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <rect stroke="#DEE2EF" x="0.5" y="0.5" width="1600" height="659"></rect>
+                    <circle id="Oval" stroke="#DEE2EF" mask="url(#mask-2)" cx="372.5" cy="329.5" r="394.5"></circle>
+                    <circle id="Oval" stroke="#DEE2EF" mask="url(#mask-2)" cx="372.5" cy="329.5" r="285.5"></circle>
+                    <circle id="Oval" stroke="#DEE2EF" mask="url(#mask-2)" cx="372.5" cy="329.5" r="182.5"></circle>
+                    <g id="Group-55" mask="url(#mask-2)">
+                        <g transform="translate(343.000000, 300.000000)">
+                            <path d="M21.4285714,47.1428571 L30,60 L38.5714286,47.1428571 L55.7142857,47.1428571 C58.0842857,47.1428571 60,45.2271429 60,42.8571429 L60,4.28571429 C60,1.91571429 58.0842857,0 55.7142857,0 L4.28571429,0 C1.91571429,0 0,1.91571429 0,4.28571429 L0,42.8571429 C0,45.2271429 1.91571429,47.1428571 4.28571429,47.1428571 L21.4285714,47.1428571 Z" id="Stroke-263" stroke="#5062FF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M22,21.5 C22,23.9885 19.9885,26 17.5,26 C15.0115,26 13,23.9885 13,21.5 C13,19.0115 15.0115,17 17.5,17 C19.9885,17 22,19.0115 22,21.5" id="Fill-264" stroke="none" fill="#5062FF" fill-rule="evenodd"></path>
+                            <path d="M35,21.5 C35,23.9885 32.9885,26 30.5,26 C28.0115,26 26,23.9885 26,21.5 C26,19.0115 28.0115,17 30.5,17 C32.9885,17 35,19.0115 35,21.5" id="Fill-265" stroke="none" fill="#5062FF" fill-rule="evenodd"></path>
+                            <path d="M47,21.5 C47,23.9885 44.9885,26 42.5,26 C40.0115,26 38,23.9885 38,21.5 C38,19.0115 40.0115,17 42.5,17 C44.9885,17 47,19.0115 47,21.5" id="Fill-266" stroke="none" fill="#5062FF" fill-rule="evenodd"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
